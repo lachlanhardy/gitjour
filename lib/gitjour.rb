@@ -6,7 +6,7 @@ Thread.abort_on_exception = true
 
 module Gitjour
   VERSION = "6.3.0"
-  GitService = Struct.new(:name, :host, :port, :description)  
+  GitService = Struct.new(:name, :host, :port, :description)
 
   class Application
 
@@ -32,7 +32,7 @@ module Gitjour
           if args.first.to_i.to_s == args.first
             args.first.to_i
           end
-          
+
 				service_list(timeout)
 			end
 
